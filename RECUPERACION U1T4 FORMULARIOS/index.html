@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Crédito - De Prati</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <!-- Encabezado y Logo -->
+        <div class="logo">
+            <!-- Usamos el logo oficial desde Wikimedia como ejemplo -->
+            <img src="logodeprati.png" alt="Logo De Prati" class="logo-img">
+        </div>
+        
+        <h1 class="form-title">Solicitud de Crédito Directo</h1>
+        <p class="form-subtitle">Completa tus datos para solicitar tu crédito y empezar a disfrutar de beneficios exclusivos.</p>
+
+        <!-- Formulario -->
+        <form action="#" method="POST">
+            
+            <h3 class="section-title">Datos Personales</h3>
+            <div class="form-row">
+                <div class="form-group half">
+                    <label for="tipo_doc">Tipo de documento *</label>
+                    <select id="tipo_doc" name="tipo_doc" required>
+                        <option value="cedula">Cédula</option>
+                        <option value="pasaporte">Pasaporte</option>
+                    </select>
+                </div>
+                <div class="form-group half">
+                    <label for="num_doc">Número de documento *</label>
+                    <input type="text" id="num_doc" name="num_doc" placeholder="Ej: 1712345678" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group half">
+                    <label for="nombres">Nombres completos *</label>
+                    <input type="text" id="nombres" name="nombres" required>
+                </div>
+                <div class="form-group half">
+                    <label for="apellidos">Apellidos completos *</label>
+                    <input type="text" id="apellidos" name="apellidos" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group half">
+                    <label for="fecha_nac">Fecha de Nacimiento *</label>
+                    <input type="date" id="fecha_nac" name="fecha_nac" required>
+                </div>
+                <div class="form-group half">
+                    <label for="celular">Teléfono Celular *</label>
+                    <input type="tel" id="celular" name="celular" placeholder="Ej: 0991234567" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Correo electrónico *</label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+            </div>
+
+            <h3 class="section-title">Datos Domiciliarios y Laborales</h3>
+            
+            <div class="form-row">
+                <div class="form-group half">
+                    <label for="provincia">Provincia *</label>
+                    <select id="provincia" name="provincia" required>
+                        <option value="">Selecciona...</option>
+                        <option value="pichincha">Pichincha</option>
+                        <option value="guayas">Guayas</option>
+                        <option value="azuay">Azuay</option>
+                        <option value="manabi">Manabí</option>
+                        <option value="otro">Otra</option>
+                    </select>
+                </div>
+                <div class="form-group half">
+                    <label for="ciudad">Ciudad *</label>
+                    <input type="text" id="ciudad" name="ciudad" placeholder="Ej: Quito" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group half">
+                    <label for="estado_laboral">Situación Laboral *</label>
+                    <select id="estado_laboral" name="estado_laboral" required>
+                        <option value="dependiente">Empleado Dependiente</option>
+                        <option value="independiente">Independiente / Negocio Propio</option>
+                        <option value="estudiante">Estudiante</option>
+                        <option value="jubilado">Jubilado</option>
+                    </select>
+                </div>
+                <div class="form-group half">
+                    <label for="ingresos">Ingresos Mensuales Estimados ($) *</label>
+                    <input type="number" id="ingresos" name="ingresos" placeholder="Ej: 800" min="0" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Crea una Contraseña para tu cuenta *</label>
+                <input type="password" id="password" name="password" required>
+                <small class="hint">Mínimo 8 caracteres, incluir números y mayúsculas.</small>
+            </div>
+
+            <div class="form-checkbox">
+                <input type="checkbox" id="terminos" name="terminos" required>
+                <label for="terminos">Acepto las Políticas de Privacidad, Términos de Uso y autorizo la consulta de mi buró de crédito.</label>
+            </div>
+
+            <button type="submit" class="btn-submit">ENVIAR SOLICITUD </button>
+        </form>
+    </div>
+</body>
+</html>
