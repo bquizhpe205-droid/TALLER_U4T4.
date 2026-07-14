@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduTech Lab | Educación Digital</title>
+
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav__logo">EduTech Lab</a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li><a href="#home" class="nav__link active-link">Inicio</a></li>
+          <li><a href="#about" class="nav__link">Proyecto</a></li>
+          <li><a href="#discover" class="nav__link">Recursos</a></li>
+          <li><a href="#place" class="nav__link">Programas</a></li>
+        </ul>
+
+        <div class="nav__dark">
+          <span class="change-theme-name">Modo oscuro</span>
+          <i class="ri-moon-line change-theme" id="theme-button"></i>
+        </div>
+
+        <button class="nav__close" id="nav-close">
+          <i class="ri-close-line"></i>
+        </button>
+      </div>
+
+      <button class="nav__toggle" id="nav-toggle">
+        <i class="ri-function-line"></i>
+      </button>
+    </nav>
+  </header>
+
+  <main class="main">
+
+    <section class="home" id="home">
+      <div class="home__container container grid">
+        <article class="home__data">
+          <span class="home__data-subtitle">Educación tecnológica</span>
+          <h1 class="home__data-title">
+            Aprende, crea y transforma <br>
+            con herramientas digitales
+          </h1>
+          <p class="home__description">
+            Plataforma educativa orientada al desarrollo de competencias digitales, pensamiento lógico y aprendizaje colaborativo.
+          </p>
+          <a href="#discover" class="button">Explorar recursos</a>
+        </article>
+
+        <aside class="home__image">
+          <img src="assets/img/Educacion1.png" alt="Educación tecnológica" class="home__img">
+        </aside>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="about__container container grid">
+        <article class="about__data">
+          <h2 class="section__title about__title">Proyecto de aula digital</h2>
+          <p class="about__description">
+            EduTech Lab presenta una propuesta de aprendizaje basada en recursos digitales, actividades interactivas y metodologías activas. Su finalidad es fortalecer el uso responsable de la tecnología en los procesos educativos.
+          </p>
+          <a href="#place" class="button">Ver programas</a>
+        </article>
+
+        <aside class="about__img">
+          <img src="assets/img/Educacion2.png" alt="Aula digital" class="about__img-main">
+        </aside>
+      </div>
+    </section>
+
+    <section class="discover section" id="discover">
+      <h2 class="section__title">Recursos interactivos</h2>
+
+      <div class="discover__container container swiper-container">
+        <div class="swiper-wrapper">
+
+          <article class="discover__card swiper-slide">
+            <img src="assets/img/Educacion3.png" alt="Recursos digitales educativos" class="discover__img">
+            <div class="discover__data">
+              <h3 class="discover__title">Biblioteca digital</h3>
+              <span class="discover__description">Lecturas, guías y materiales</span>
+            </div>
+          </article>
+
+          <article class="discover__card swiper-slide discover__card--icon">
+            <i class="ri-computer-line discover__icon"></i>
+            <h3 class="discover__title-dark">Laboratorio virtual</h3>
+            <p>Espacio para prácticas, simulaciones y actividades guiadas.</p>
+          </article>
+
+          <article class="discover__card swiper-slide discover__card--icon">
+            <i class="ri-team-line discover__icon"></i>
+            <h3 class="discover__title-dark">Trabajo colaborativo</h3>
+            <p>Actividades grupales para fortalecer la participación.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="experience section">
+      <h2 class="section__title">Impacto del aprendizaje digital</h2>
+
+      <div class="experience__container container grid">
+        <div class="experience__content grid">
+          <article class="experience__data">
+            <h3 class="experience__number">12</h3>
+            <span>Módulos formativos</span>
+          </article>
+
+          <article class="experience__data">
+            <h3 class="experience__number">80+</h3>
+            <span>Actividades prácticas</span>
+          </article>
+
+          <article class="experience__data">
+            <h3 class="experience__number">5</h3>
+            <span>Rutas de aprendizaje</span>
+          </article>
+        </div>
+
+        <aside class="experience__img">
+          <img src="assets/img/Educacion4.png" alt="Aprendizaje digital" class="experience__img-main">
+        </aside>
+      </div>
+    </section>
+
+    <section class="video section">
+      <h2 class="section__title">Experiencia de aprendizaje</h2>
+
+      <div class="video__container container">
+        <p class="video__description">
+          El aprendizaje digital permite integrar recursos multimedia, participación activa y evaluación continua.
+        </p>
+
+        <div class="video__content">
+          <video id="video-file">
+            <source src="assets/video/video.mp4" type="video/mp4">
+          </video>
+
+          <button class="button button--flex video__button" id="video-button">
+            <i class="ri-play-line video__button-icon" id="video-icon"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="place section" id="place">
+      <h2 class="section__title">Rutas de formación</h2>
+
+      <div class="place__container container grid">
+
+        <article class="place__card">
+          <i class="ri-flow-chart place__icon"></i>
+          <h3 class="place__title">Pensamiento computacional</h3>
+          <p>Algoritmos, lógica y resolución de problemas.</p>
+          <span class="place__level">Nivel inicial</span>
+        </article>
+
+        <article class="place__card">
+          <i class="ri-code-s-slash-line place__icon"></i>
+          <h3 class="place__title">Diseño web responsive</h3>
+          <p>HTML, CSS, Grid, Flexbox y accesibilidad.</p>
+          <span class="place__level">Nivel medio</span>
+        </article>
+
+        <article class="place__card">
+          <i class="ri-javascript-line place__icon"></i>
+          <h3 class="place__title">Programación creativa</h3>
+          <p>JavaScript aplicado a proyectos educativos.</p>
+          <span class="place__level">Nivel medio</span>
+        </article>
+
+        <article class="place__card">
+          <i class="ri-robot-line place__icon"></i>
+          <h3 class="place__title">Robótica educativa</h3>
+          <p>Sensores, prototipos y aprendizaje práctico.</p>
+          <span class="place__level">Nivel práctico</span>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="subscribe section">
+      <div class="subscribe__container container">
+        <h2 class="section__title subscribe__title">Recibe novedades educativas</h2>
+        <p class="subscribe__description">
+          Suscríbete para recibir recursos, actividades y herramientas digitales.
+        </p>
+
+        <form class="subscribe__form">
+          <input type="email" placeholder="Ingresa tu correo" class="subscribe__input">
+          <button class="button">Suscribirme</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer section">
+    <div class="footer__container container grid">
+      <article>
+        <h3 class="footer__title">EduTech Lab</h3>
+        <p class="footer__description">
+          Educación digital, innovación y aprendizaje interactivo.
+        </p>
+      </article>
+
+      <p class="footer__copy">
+        &#169; Integrantes : Morales Daniela , Ontaneda Tifany , Vega Amelia , Chingal Joselyn , Quizphe Brisa
+      </p>
+    </div>
+  </footer>
+
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="ri-arrow-up-line scrollup__icon"></i>
+  </a>
+
+  <script src="assets/js/scrollreveal.min.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
